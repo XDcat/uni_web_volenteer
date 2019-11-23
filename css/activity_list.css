@@ -1,0 +1,143 @@
+/*------------------------------------------------------
+重置样式
+------------------------------------------------------*/
+* {
+    /*border:1px solid;*/
+}
+a {
+    text-decoration: none; /* 无下划线，标准字体 */
+    color: #383749;
+
+}
+body{
+    color: #383749;
+    font-size: 16px;
+    line-height: 1.8;
+    font-family: 宋体, Roboto, serif;
+}
+
+
+/*---------------------------------------------------------
+container
+---------------------------------------------------------*/
+.container {
+    width: 1000px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0 auto;
+    border:1px solid;
+}
+/*---------------------------------------------------------
+breadcrumbs
+---------------------------------------------------------*/
+#breadcrumbs {
+    height: 1em;
+    padding: 50px 0;
+}
+#breadcrumbs ul{
+    list-style: none outside none;  /* 格式化 ul */
+    padding-left: 0;
+}
+#breadcrumbs li {
+    float: left;  /* 浮动 */
+    color: #c0c1cd;
+}
+#breadcrumbs li a {
+    color: #383749;
+    text-decoration: none;
+}
+/* 设置下一个图标 */
+#breadcrumbs li a:after {
+    content: "\e600";
+    font-size: small;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+/*---------------------------------------------------------
+#course-list
+---------------------------------------------------------*/
+#activity-list {
+    width: 700px;
+}
+#activity-cards {
+    margin: 20px 60px;
+}
+/*---------------------------------------------------------
+.activity-card
+---------------------------------------------------------*/
+.activity-card {
+    /*box-shadow: 0 4px 8px 0 rgb(0, 0, 0.2);  !* 添加阴影 *!*/
+    transition: all .35s;
+    width: 250px;
+    height: 280px;
+    margin: 10px 20px;
+}
+.activity-card .content{
+    background: #ffffff;
+    border: 1px solid #ebebeb;
+}
+.activity-cart div{
+    width: 100%;
+}
+.activity-card .text-left {
+    padding-left: 0.5em;
+}
+.activity-card:hover {
+    box-shadow: 0 8px 16px 0 rgb(0, 0, 0.2);
+}
+.activity-card .act-img {
+    height: 155px;
+}
+.activity-card img {
+    width: 100%;
+    height: 100%;
+}
+/* 处理文字 */
+.activity-card h2 {
+    margin: 0 0;
+    height: 50px;
+}
+.activity-card .organization-time{
+    height: 20px;
+    font-size: small;
+}
+.activity-card .act-organization a{
+    font-style: italic;
+    color: #19c880
+}
+
+.activity-card .act-detail {
+    height: 55px;
+}
+.activity-card .act-detail div{
+    float: left;
+    height: 100%;
+}
+.activity-card .volunteer-time span{
+    font-size: xx-large;
+    color: #19c880;
+    font-weight: bold;
+}
+.activity-card .volunteer-type span{
+    padding-top: 18px;
+    padding-left: 20px;
+    display: block;
+}
+.activity-card .volunteer-people {
+    font-size: small;
+    text-align: right;
+    color: #c0c1cd;
+    line-height: 1.1em;
+}
+.activity-card .volunteer-people span {
+    display: block;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+/*---------------------------------------------------------
+.sidebar
+---------------------------------------------------------*/
+.sidebar{
+    width: 300px;
+}
