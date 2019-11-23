@@ -1,0 +1,208 @@
+/*---------------------
+#container
+---------------------*/
+/*---------------------
+1. #breadcrumbs
+---------------------*/
+#breadcrumbs {
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+#breadcrumbs ul {
+    list-style: none outside none;
+    padding-left: 0;
+}
+
+#breadcrumbs li {
+    float: left;
+    color: #c0c1cd;
+}
+
+#breadcrumbs a {
+}
+
+#breadcrumbs li a:after {
+    content: "\e600";
+    font-size: small;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+/*---------------------
+2. 活动列表
+---------------------*/
+#activity-list, #activity-cards, #pages {
+    width: 780px;
+}
+
+#activity-cards > div, #activity-list > div, #activity-list, #sidebar {
+    float: left;
+}
+
+#activity-cards {
+    margin: 0 -20px;
+}
+
+/*---------------------
+2.1 卡片
+---------------------*/
+.activity-card {
+    transition: all 0.35s;
+    width: 340px;
+    margin: 15px 20px;
+    border: 2px solid #ebebeb;
+}
+
+.activity-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.activity-card .content {
+    background: #ffffff;
+}
+
+.activity-card img {
+    width: 100%;
+    height: 100%
+}
+
+.activity-card .act-img {
+    width: 100%;
+    height: 220px;
+}
+
+/* 处理文字 */
+.activity-card .text-left {
+    padding-left: 20px;
+}
+
+.activity-card .act-title {
+    font-size: x-large;
+    height: 80px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.activity-card .organization-time {
+    height: 30px;
+    /*font-size: small;*/
+}
+
+.activity-card .act-organization a {
+    font-style: italic;
+    color: #19c880
+}
+
+.activity-card .act-detail {
+    height: 40px;
+    position: relative;
+}
+
+.activity-card .volunteer-time {
+    font-size: xx-large;
+    font-weight: bold;
+    color: #19c880;
+    position: absolute;
+    line-height: 1em;
+    bottom: 0;
+}
+
+.activity-card .volunteer-type {
+    padding-left: 80px;
+    /*font-size: small;*/
+    position: absolute;
+    bottom: 0;
+}
+
+.activity-card .volunteer-people {
+    text-align: right;
+    color: #c0c1cd;
+    line-height: 1.1em;
+    position: absolute;
+    bottom: 0;
+    right: 1em;
+}
+
+/*---------------------
+2.2 页码
+---------------------*/
+#pages li {
+    margin: 0 10px;
+    width: 2em;
+    height: 2em;
+    text-align: center;
+    list-style: none;
+    border: 1px solid #ebebeb;
+    float: left;
+}
+
+#pages li:hover {
+    background: #efefef;
+}
+
+#pages .total-page {
+    float: right;
+    padding-right: 90px;
+}
+
+/*---------------------
+3. 侧边栏
+---------------------*/
+#sidebar {
+    border: 1px solid #ebebeb;
+    width: 250px;
+    margin-top: 15px;
+}
+
+#sidebar li {
+    list-style: none;
+}
+
+.search-widget > form {
+    padding: 20px;
+    height: 40px;
+}
+
+.search-widget .search-input {
+    height: 36px;
+    width: 160px;
+    float: left;
+}
+
+.search-widget .button {
+     border: 0;
+     width: 40px;
+     height: 40px;
+     background: #19c880;
+     cursor: pointer;
+ }
+
+.latest-activity, .category {
+    padding: 20px;
+}
+
+.category a:before {
+    content: "\e647";
+    padding-right: 5px;
+}
+
+
+.small-card img {
+    height: 84px;
+    width: 84px;
+}
+.small-card * {
+    float: left;
+}
+.small-card h3 {
+    margin: 0;
+    width: 100px;
+    padding-left: 20px;
+}
+.small-card div {
+    padding-left: 20px;
+    color: #f3a90b;
+    font-weight: bold;
+}
+
