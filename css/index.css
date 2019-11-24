@@ -1,0 +1,247 @@
+#header{
+    width: 100%;
+    height: 600px;
+    background-image: url("../images/index-bg.jpg");
+    /*background-position: center top;*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#container {
+    width: 100%;
+}
+#container > div {
+    width: 1040px;
+    margin: 0 auto;
+}
+/*---------------------
+1. 标题框
+---------------------*/
+#top-title {
+    visibility: hidden;
+}
+#header-title {
+    width: 1040px;
+    position: absolute;
+    top: 110px;
+    font-family: 微软雅黑 , Roboto, serif;
+    color: #ffffff;
+    margin-top: 60px;
+}
+#header-title .en-small {
+    color: #19c880;
+}
+#header-title .big-title{
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+}
+#header-title .view-all{
+    margin: 30px auto;
+    letter-spacing: .5em;
+}
+#header-title .view-all a {
+    color: #ffffff;
+    margin-top: 20px;
+    border: 2px solid #19c880;
+    background: rgba(0, 0, 0, 0);
+    font-size: x-large;
+    padding: 15px 30px;
+    font-weight: bold;
+}
+#header-title .view-all .btn a:hover{
+    background: #19c880;
+    cursor: pointer;
+    color: #ffffff;
+}
+/*---------------------
+1.0 简单活动
+---------------------*/
+
+/*---------------------
+2. 名言
+---------------------*/
+#container div[id="saying"]{
+    width: 100%;
+    height: 200px;
+    padding: 50px 0;
+    background: rgba(0, 0, 0, .05);
+}
+#saying .content {
+    width: 1040px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#saying .head-img {
+    height: 150px;
+    width: 150px;
+    background-image: url("../images/leifeng-h.jpg");
+    background-size: cover;
+    border-radius: 50%;
+    padding:0;
+    float: left;
+    margin-left: 100px;
+}
+#saying .word{
+    font-size: x-large;
+    width: 500px;
+    height: 150px;
+    float: right;
+    margin-right: 100px;
+}
+#saying .word:after {
+    content: "\e6b2";
+    color: #19c880;
+    font-size: 80px;
+    position: absolute;
+    right: 100px;
+    top: 50px;
+}
+#saying .word .name {
+    color: #19c880;
+}
+
+/*---------------------
+3. 许多活动
+---------------------*/
+#many-activity .header{
+    height: 80px;
+}
+#many-activity .big-title {
+    margin-left: 30px;
+    margin-top: 15px;
+    font-size: xx-large;
+    font-weight: bold;
+    float: left;
+}
+#many-activity .category {
+    font-size: x-large;
+    float: right;
+}
+#many-activity .category ul {
+    margin-top: 20px;
+    list-style: none;
+}
+#many-activity .category li {
+    float: left;
+    margin: 0 20px;
+}
+
+#many-activity .cards > div{
+    float: left;
+}
+
+.activity-card {
+    transition: all 0.35s;
+    width: 300px;
+    margin: 15px 20px;
+    border: 2px solid #ebebeb;
+}
+
+.activity-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.activity-card .content {
+    background: #ffffff;
+}
+
+.activity-card img {
+    width: 100%;
+    height: 100%
+}
+
+.activity-card .act-img {
+    width: 100%;
+    height: 220px;
+}
+
+/* 处理文字 */
+.activity-card .text-left {
+    padding-left: 20px;
+}
+
+.activity-card .act-title {
+    font-size: x-large;
+    height: 80px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.activity-card .organization-time {
+    height: 30px;
+    /*font-size: small;*/
+}
+
+.activity-card .act-organization a {
+    font-style: italic;
+    color: #19c880
+}
+
+.activity-card .act-detail {
+    height: 40px;
+    position: relative;
+}
+
+.activity-card .volunteer-time {
+    font-size: xx-large;
+    font-weight: bold;
+    color: #19c880;
+    position: absolute;
+    line-height: 1em;
+    bottom: 0;
+}
+
+.activity-card .volunteer-type {
+    padding-left: 80px;
+    /*font-size: small;*/
+    position: absolute;
+    bottom: 0;
+}
+
+.activity-card .volunteer-people {
+    text-align: right;
+    color: #c0c1cd;
+    line-height: 1.1em;
+    position: absolute;
+    bottom: 0;
+    right: 1em;
+}
+#many-activity .view-all{
+    margin: 30px auto;
+    text-align: center;
+    letter-spacing: .5em;
+}
+#many-activity .view-all a {
+    margin-top: 20px;
+    border: 2px solid #19c880;
+    background: rgba(0, 0, 0, 0);
+    font-size: x-large;
+    padding: 15px 30px;
+    font-weight: bold;
+}
+#many-activity .view-all .btn a:hover{
+    background: #19c880;
+    cursor: pointer;
+    color: #ffffff;
+}
+/*---------------------
+4. 照片墙
+---------------------*/
+#container div[id="img-wall"] {
+    margin-top: 100px;
+    width: 100%;
+    column-width: 250px;
+    -webkit-column-width: 250px;
+    column-gap: 1px;
+    -webkit-column-gap: 1px;
+}
+#img-wall div {
+    width: 250px;
+    margin: 0;
+}
+#img-wall img{
+    width: 250px;
+}
+

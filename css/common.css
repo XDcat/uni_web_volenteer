@@ -28,12 +28,7 @@ body {
 
 #top2 {
     width: 100%;
-    height: 250px;
-}
-
-#white-masking {
-    width: 100%;
-    height: 60px;
+    height: 350px;
 }
 
 #navbar {
@@ -42,12 +37,6 @@ body {
     position: relative;
 }
 
-#top-title {
-    width: 100%;
-    height: 150px;
-    line-height: 190px;
-    text-align: center;
-}
 
 #container {
     width: 1040px;
@@ -55,10 +44,20 @@ body {
 }
 
 #footer {
+    width: 100%;
+    height: 200px;
+    /*background: #ebebeb;*/
+    margin-top: 100px;
+}
+#footer .container {
     width: 1040px;
-    height: 100px;
-    background: #ebebeb;
     margin: 50px auto;
+}
+#footer .container span {
+    padding-left: 10px;
+}
+#footer .container img {
+    width: 100px;
 }
 
 .center {
@@ -76,17 +75,20 @@ body {
 #header {
     width: 100%;
     height: 300px;
-    /*background: #383749;*/
-    background-image: url("../images/header.jpg");
-    background-position: center top;
+    background-image: url("../images/header1.jpg");
+    /*background-position: center top;*/
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 微软雅黑, serif;
 }
 
 #white-masking {
-    /*background: rgba(0, 0, 0, .2);*/
+    background: rgba(255, 255, 255, .1);
     height: 60px;
+}
+#header .black-mask {
+    height: 100%;
+    background: rgba(21,20,33,.4);
 }
 
 #navbar .site-title {
@@ -136,11 +138,14 @@ body {
 }
 
 #top-title {
+    width: 1140px;
+    height: 150px;
     color: #ffffff;
-    font-size: 80px;
+    font-size: 50px;
     letter-spacing: 0.3em;
-    /*position: relative;*/
-    /*top: -40px*/
+    text-align: center;
+    line-height: 190px;
+    margin: 0 auto;
 }
 #top-title .black-mask{
     background: rgba(0, 0, 0, .4);
@@ -166,6 +171,7 @@ body {
     font-size: 30px;
     position: relative;
     top: 5px;
+    margin-right: 15px;
 }
 #top1 .header-bar-tel span{
     margin-left: 2em;;
@@ -176,6 +182,7 @@ body {
     font-size: 30px;
     position: relative;
     top: 5px;
+    margin-right: 15px;
 }
 #top1 .header-bar-right {
     float: right;
@@ -204,4 +211,12 @@ body {
     height: 30px;
     background: #19c880;
     cursor: pointer;
+}
+.current-item {
+    color: #19c880;
+}
+
+.aline {
+    background-color:#E6E3E3;
+    height:1px;
 }
